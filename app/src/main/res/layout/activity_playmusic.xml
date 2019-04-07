@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bakground_playmusic"
+    tools:context=".Activity.PlaymusicActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbplaymusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpplaymusic"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvtimebaihatplaymusic"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="00:00"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/sbbaihatplaymusic"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvsumtimebaihat"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="00:00"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+        android:id="@+id/ibsuffleplaymusic"
+            android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:src="@drawable/iconsuffle"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+        <ImageButton
+            android:id="@+id/ibpreviewplaymusic"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/iconpreview"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageButton
+            android:id="@+id/ibpalyplaymusic"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/iconplay"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <ImageButton
+        android:id="@+id/ibnextplaymusic"
+        android:scaleType="fitXY"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:src="@drawable/iconnext"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+        <ImageButton
+            android:id="@+id/ibrepeatplaymusic"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:src="@drawable/iconrepeat"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
